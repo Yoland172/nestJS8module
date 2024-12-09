@@ -11,39 +11,21 @@ import { User } from './utils/types';
 @Injectable()
 export class UserService {
   async findAll(): Promise<User[]> {
-    try {
-      const users = await getUsers();
-      console.log(users);
-      return users;
-    } catch (error) {
-      console.error('Error fetching users:', error);
-    }
+    const users = await getUsers();
+    console.log(users);
+    return users;
   }
 
   async setNewUser(userData: UserCreateDto): Promise<User[]> | null {
-    try {
-      const newUser = await setNewUser(userData);
-      return newUser ? newUser : null;
-    } catch (error) {
-      console.error('Error fetching users:', error);
-      return null;
-    }
+    const newUser = await setNewUser(userData);
+    return newUser ? newUser : null;
   }
 
   async changeUserInfo(userData: Partial<User>, userId: number) {
-    try {
-      return await updateUserInfo(userId, userData);
-    } catch {
-      return null;
-    }
+    return await updateUserInfo(userId, userData);
   }
 
   async deleteUser(id: number) {
-    try {
-      return await deleteUser(id);
-    } catch {
-      console.error('can`t delete user');
-      return null;
-    }
+    return await deleteUser(id);
   }
 }

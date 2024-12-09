@@ -68,9 +68,9 @@
     },
     {
       "id": 38,
-      "name": "Karen Clark",
-      "email": "karen.c@gmail.com",
-      "isActive": true
+      "name": "newUser",
+      "email": "test2@gmail.com",
+      "isActive": false
     },
     {
       "id": 39,

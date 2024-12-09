@@ -1,0 +1,88 @@
+{
+  "usersData": [
+    {
+      "id": 27,
+      "name": "John Smith",
+      "email": "john.smith@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 28,
+      "name": "Sarah Wilson",
+      "email": "sarah.w@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 29,
+      "name": "Mike Johnson",
+      "email": "mike.j@gmail.com",
+      "isActive": false
+    },
+    {
+      "id": 30,
+      "name": "Emma Davis",
+      "email": "emma.d@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 31,
+      "name": "James Miller",
+      "email": "james.m@gmail.com",
+      "isActive": false
+    },
+    {
+      "id": 32,
+      "name": "Lisa Anderson",
+      "email": "lisa.a@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 33,
+      "name": "David Taylor",
+      "email": "david.t@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 34,
+      "name": "Jennifer Brown",
+      "email": "jen.b@gmail.com",
+      "isActive": false
+    },
+    {
+      "id": 35,
+      "name": "Robert White",
+      "email": "rob.w@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 36,
+      "name": "Michelle Lee",
+      "email": "michelle.l@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 37,
+      "name": "Thomas Martin",
+      "email": "tom.m@gmail.com",
+      "isActive": false
+    },
+    {
+      "id": 38,
+      "name": "Karen Clark",
+      "email": "karen.c@gmail.com",
+      "isActive": true
+    },
+    {
+      "id": 39,
+      "name": "usvfdnj",
+      "email": "test2@gmail.com",
+      "isActive": false
+    },
+    {
+      "id": 40,
+      "name": "usvfdnj",
+      "email": "test2@gmail.com",
+      "isActive": false
+    }
+  ]
+}

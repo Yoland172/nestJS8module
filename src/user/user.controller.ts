@@ -12,6 +12,7 @@ import {
 import { UserCreateDto } from './dto/createUser.dto';
 import { UserService } from './user.service';
 import { PatchUserDto } from './dto/patchUser.dto';
+import { ApiParam } from '@nestjs/swagger';
 
 @Controller('users')
 export class UserController {
@@ -45,6 +46,13 @@ export class UserController {
   }
 
   @Patch('/:id')
+  @ApiParam({
+    name: 'id',
+    required: true,
+    description: 'User ID',
+    schema: { type: 'string' },
+    example: '123e4567-e89b-12d3-a456',
+  })
   async changeUserInfo(
     @Param() params: { id: number },
     @Body() userData: PatchUserDto,
@@ -62,6 +70,13 @@ export class UserController {
   }
 
   @Delete('/:id')
+  @ApiParam({
+    name: 'id',
+    required: true,
+    description: 'User ID',
+    schema: { type: 'string' },
+    example: '123e4567-e89b-12d3-a456',
+  })
   async deleteUser(@Param() params: { id: number }) {
     try {
       const users = await this.userService.deleteUser(params.id);
